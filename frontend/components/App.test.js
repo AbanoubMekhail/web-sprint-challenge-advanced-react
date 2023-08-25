@@ -4,26 +4,18 @@ import "@testing-library/jest-dom/extend-expect";
 import AppFunctional from "./AppFunctional";
 
 // Write your tests here
-test('sanity', () => {
-  expect(true).toBe(true)
-})
+// test('sanity', () => {
+//   expect(true).toBe(true)
+// })
 
-
-// import React from "react";
-
-
-
-
-
-// // Write your tests here
 test('renders without errors', () => {
  render(<AppFunctional />)
 });
 
-// test("renders the header", () => {
-//   render(<AppFunctional />)
+test("renders the header", () => {
+  render(<AppFunctional />)
 
-//   const headerElement = screen.queryByText(/Welcome to the GRID/i);
+  const headerElement = screen.queryByText(/Welcome to the GRID/i);
 
-//   expect(headerElement).toBeInTheDocument();
-// });
+  expect(headerElement).toBeInTheDocument();
+});
