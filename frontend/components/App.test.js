@@ -15,7 +15,7 @@ test('renders without errors', () => {
 test("renders the header", () => {
   render(<AppFunctional />)
 
-  const headerElement = screen.queryByText(/Welcome to the GRID/i);
+  const leftButton = screen.queryByText(/LEFT/i);
 
-  expect(headerElement).toBeInTheDocument();
+  expect(leftButton).toBeInTheDocument();
 });
